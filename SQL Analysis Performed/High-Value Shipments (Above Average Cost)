@@ -1,0 +1,5 @@
+SELECT ID, Warehouse_block, Cost_of_the_Product, Discount_offered
+FROM train_data
+WHERE Cost_of_the_Product > (SELECT AVG(Cost_of_the_Product) FROM train_data)
+ORDER BY Cost_of_the_Product DESC
+LIMIT 10;
