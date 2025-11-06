@@ -1,0 +1,4 @@
+SELECT Mode_of_Shipment, COUNT(*) AS Total_Orders
+FROM train_data
+GROUP BY Mode_of_Shipment
+ORDER BY Total_Orders DESC;
