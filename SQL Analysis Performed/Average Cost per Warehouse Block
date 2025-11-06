@@ -1,0 +1,4 @@
+SELECT Warehouse_block, ROUND(AVG(Cost_of_the_Product), 2) AS Avg_Cost
+FROM train_data
+GROUP BY Warehouse_block
+ORDER BY Avg_Cost DESC;
