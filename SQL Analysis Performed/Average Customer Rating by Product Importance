@@ -1,0 +1,4 @@
+SELECT Product_importance, ROUND(AVG(Customer_rating), 2) AS Avg_Rating
+FROM train_data
+GROUP BY Product_importance
+ORDER BY Avg_Rating DESC;
